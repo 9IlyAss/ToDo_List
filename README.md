@@ -11,6 +11,6 @@ Features
    This will strike through the task indicating it's completed.
 - Delete Task: Users can remove tasks from the list by clicking the "Delete" button next to each task.
 
-# Screenshots of the Project 📸 
+# Screenshot of the Project 📸 
 
 ![todolist](https://github.com/9IlyAss/ToDo_List/assets/154934525/81361bcc-eace-4d1b-a645-5d5c95963edc)
