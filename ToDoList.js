@@ -7,37 +7,34 @@ let submit=document.querySelector('.submit');
 function addtask()
 {
     let task=document.querySelector('.task').value;
+    if(task==="") return alert("You can't add an empty Task");
+    
     let tr=document.createElement('tr');
     let th=document.createElement('th');
-    let dele=document.createElement('button');
-    let acco=document.createElement('button');
-
+    let dele=document.createElement('button')
+    let done=document.createElement('button');
+    dele.id="delete";
+    done.id="complete";
     
     dele.textContent="Delete";
-    dele.id=task;
-
-    acco.textContent="Complete";
-    acco.className=task;
-
+    done.textContent="Complete";
     
     th.textContent=task;
     th.appendChild(dele);
-    th.appendChild(acco);
+    th.appendChild(done);
 
     tr.appendChild(th);
     table.appendChild(tr);
     
+
     dele.addEventListener('click',function(){
         table.removeChild(tr);
     });
-    acco.addEventListener('click',function(){
+
+    done.addEventListener('click',function(){
         th.style.textDecoration = 'line-through';
     });
-    task="";//it ain't working
+
+    document.querySelector('.task').value="";
     
 }
-
-
-
-
-submit.addEventListener('click',addtask);

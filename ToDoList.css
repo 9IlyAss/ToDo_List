@@ -10,6 +10,7 @@ body
 label{
     margin-left: 20px;
     font-size: 40px;
+    font-weight:bolder;
     
 }
 .todo
@@ -44,7 +45,7 @@ input[type=text]
 }
 .submit:hover
 {
-    opacity: 0.7;
+    opacity: 0.7; 
 }
 .list
 {
@@ -54,6 +55,41 @@ input[type=text]
     margin-right: auto;
     margin-top: 40px;
     border-radius: 20px;
+    overflow-y: auto;
+
+}
+table th{
+    font-size: 25px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    font-family:Roboto ;
+}
+#delete
+{
+    margin-left: 50px;
+    height: 40px;
+    width: 130px;
+    background-color: rgb(255, 13, 13);
+    font-size: 20px;
     
 
+}
+#delete:hover
+{
+    opacity: 0.9;
+    
+}
+#complete
+{
+    margin-left: 20px;
+    height: 40px;
+    width: 130px;
+    background-color: rgb(3, 255, 16);
+    font-size: 20px;
+
+}
+#complete:hover
+{
+    opacity: 0.9;
+    
 }
